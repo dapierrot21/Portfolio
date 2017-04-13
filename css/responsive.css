@@ -1,0 +1,12 @@
+@media screen and (min-width: 480px) {
+  h2,
+  p {
+    padding: 0 20px 0 20px;
+  }
+}
+
+form {
+  @media screen and (max-width: 768px) and (min-width: 485px) {
+    max-width: 70%;
+  }
+}
