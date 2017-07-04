@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dean Pierrot | Web Developer</title>
     <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
@@ -26,7 +27,6 @@
         <a href="#port"><li>Portfolio</li></a>
         <a href="#test"><li>Testimony</li></a>
         <a href="#help"><li>Need Help?</li></a>
-        <a href="#blog"><li>Blog</li></a>
       </ul>
     </div>
 
@@ -42,7 +42,7 @@
 
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <p>Hi, my name is Dean Pierrot and I am a Web Developer from Louisville, Ky. My brand new hobby is creating beautiful web pages in HTML5, CSS3 and JavaScript or jQuery. My other skills include  Photoshop, Illustrator.</p>
+            <p>Hi, my name is Dean Pierrot and I am a Web Developer from Louisville, Ky. I have a passion in creating beautiful web pages in HTML5, CSS3 and JavaScript &amp; jQuery. My other skills include Wordpress, Photoshop and Illustrator.</p>
             <p>If you want to hire me <a class="js-connect" href="#help">connect</a> with me.</p>
           </div>
         </div>
@@ -94,39 +94,21 @@
           </div>
 
           <div class="col-md-4">
-            <img class="center-block" src="img/office-background.jpg" alt="By Samuel Zeller" />
-          </div>
-
-          <div class="col-md-4">
-            <img class="center-block" src="img/pink-logo.jpg" alt="" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <img class="center-block" src="img/lion-background.jpg" alt="" />
-          </div>
-
-          <div class="col-md-4">
-            <img class="center-block" src="img/office-background.jpg" alt="" />
-          </div>
-
-          <div class="col-md-4">
-            <img class="center-block" src="img/pink-logo.jpg" alt="" />
+        <div class="container">
+            <img class="center-block image" src="img/lion-background.jpg" alt="" />
+          <div class="overlay">
+            <div class="text">Project Coming Soon!</div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <img class="center-block" src="img/pink-logo.jpg" alt="By Anthony DELANOIX" />
           </div>
 
           <div class="col-md-4">
-            <img class="center-block" src="img/lion-background.jpg" alt="" />
+        <div class="container">
+            <img class="center-block image" src="img/lion-background.jpg" alt="" />
+          <div class="overlay">
+            <div class="text">Project Coming Soon!</div>
           </div>
-
-          <div class="col-md-4">
-            <img class="center-block" src="img/lion-background.jpg" alt="" />
+        </div>
           </div>
         </div>
       </div>
@@ -168,29 +150,35 @@
 
         <div class="row">
           <div class="col-sm-4 col-sm-offset-4">
-            <form class="center-block" action="#" method="post">
-              <div class="form-group">
-                <label class="sr-only" for="inputName">Full name</label>
 
-                <input id="inputName" class="form-control" type="text" placeholder="john Smith" required />
+            <div id="form-messages"></div>
+
+            <form id="ajax-contact" class="center-block" action="mailer.php" method="post">
+              <div class="form-group">
+                <label class="sr-only" for="name">Full name</label>
+
+                <input id="name" class="form-control" type="text" name="name" placeholder="john Smith" required />
               </div>
 
               <div class="form-group">
-                <label for="inputMail" class="sr-only">Email Address</label>
+                <label for="email" class="sr-only">Email Address</label>
 
-                <input id="inputMail" class="form-control" type="email" placeholder="example@mail.com" required />
+                <input id="email" name ="email" class="form-control" type="email" placeholder="example@mail.com" required />
               </div>
 
               <div class="form-group">
-                <label for="inputMessage" class="sr-only">Your Message</label>
+                <label for="message" class="sr-only">Your Message</label>
 
-                <textarea id="inputMessage" class="form-control" name="message" cols="30" rows="8" required></textarea>
+                <textarea id="message" class="form-control" name="message" cols="30" rows="8" required></textarea>
               </div>
 
               <div class="form-group">
                 <button class="btn btn-default center-block" type="submit" value="Hire me">Hire me</button>
               </div>
             </form>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="mailto:dapierrot21@gmail.com" class="fa fa-google"></a>
           </div>
         </div>
       </div>
@@ -198,5 +186,7 @@
     <p><a href="#top">Top</a></p>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
