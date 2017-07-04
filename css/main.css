@@ -34,6 +34,8 @@ header{
 	border-bottom: 1px solid #dddddd;
 }
 
+
+
 .hamburger{
   background: none;
   position: absolute;
@@ -233,14 +235,7 @@ hr {
   vertical-align: top;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-  color: $red;
-}
 
-.navbar-default .navbar-nav>li>a:active {
-  color: darken($red, 5%);
-}
 
 /*Main*/
 
@@ -249,16 +244,6 @@ hr {
   height: 560px;
   background: url(../img/lion-background.jpg) no-repeat center center;
   background-size: cover;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .5);
-  }
 }
 
 .main-heading {
@@ -274,15 +259,53 @@ hr {
   color: skyblue;
 }
 
-/*About*/
-
-.sec-about a {
-  color: #000;
-  &:hover,
-  &:focus {
-    color: $red;
-  }
+.center-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+/*Overlay*/
+
+.container{
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 
 /*Services*/
 
@@ -314,6 +337,7 @@ hr {
   background: #f9f9f9;
 }
 
+
 /*Contact*/
 
 .sec-contact .form-control:focus {
@@ -327,11 +351,59 @@ hr {
   font-size: .95rem;
   color: skyblue;
 
-  @extend %transition;
 
-  &:hover,
-  &:focus {
-    background: $red;
-    border-color: darken($red, 10%);
+}
+
+@media screen and (max-width: 480px) {
+  .main-heading {
+    line-height: 90px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
   }
+
+  span {
+    font-size: 1.1em;
+    font-weight: bolder;
+  }
+
+  .text-center {
+    margin-top: 40px;
+  }
+}
+
+
+/*Icons*/
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+}
+
+/*Gmail*/
+.fa-google {
+  background: red;
+  color: white;
 }
