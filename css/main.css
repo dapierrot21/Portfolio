@@ -6,7 +6,8 @@
 span {
   font-size: 1.2em;
   text-transform: uppercase;
-  color: skyblue;
+  color: #3D9EC5;
+  font-weight: 400;
 }
 
 span {
@@ -26,6 +27,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  color: #3D9EC5;
+}
+
 header{
 	width: 100%;
 	background: #ffffff;
@@ -43,7 +48,7 @@ header{
   right: 0;
   line-height:45px;
   padding:5px 15px 0px 15px;
-  color:#999;
+  color:#3D9EC5;
   border:0;
   font-size:1.4em;
   font-weight:bold;
@@ -58,7 +63,7 @@ header{
   top:0px;
   right:0;
   padding:7px 15px 0px 15px;
-  color:#999;
+  color:#3D9EC5;
   border:0;
   font-size:3em;
   line-height:65px;
@@ -77,7 +82,7 @@ header{
   position: absolute;
   text-align: center;
   font-size: 12px;
-  opacity: .75;
+  opacity: .95;
 }
 .menu ul {
   margin: 0;
@@ -107,7 +112,8 @@ header{
 }
 .menu a {
   text-decoration: none;
-  color: #666;
+  color: #3D9EC5;
+  font-size: 1.2em;
 }
 .menu a:hover {
   text-decoration: none;
@@ -134,7 +140,7 @@ html {
 
 body {
   font-family: 'Open sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .navbar a,
@@ -175,7 +181,7 @@ p {
 
 .sec-services h2,
 .sec-services p {
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -211,7 +217,8 @@ a {
 
 hr {
   margin-bottom: 3em;
-  width: 7%;
+  width: 7.5%;
+  border-color: black;
 }
 
 /*=Layout=*/
@@ -256,7 +263,7 @@ hr {
   padding: 0;
   margin: auto;
   height: 40px;
-  color: skyblue;
+  color: #30c9e8;
 }
 
 .center-block {
@@ -364,7 +371,7 @@ hr {
 
   span {
     font-size: 1.1em;
-    font-weight: bolder;
+    font-weight: 400;
   }
 
   .text-center {
@@ -405,5 +412,12 @@ hr {
 /*Gmail*/
 .fa-google {
   background: red;
+  color: white;
+}
+
+/*Github*/
+
+.fa-github {
+  background: black;
   color: white;
 }
