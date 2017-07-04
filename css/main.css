@@ -1,3 +1,5 @@
+/*Base Styles*/
+
 * {
   padding: 0;
   list-style: none;
@@ -132,7 +134,29 @@ header{
 }
 
 
-/*=Typography=*/
+section {
+  padding: 5em 0;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  transition: all .25s;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7.5%;
+  border-color: black;
+}
+
+
+/*Font Styles*/
 
 html {
   font-size: 16px;
@@ -198,27 +222,8 @@ p {
   text-decoration: none;
 }
 
-/*=Base=*/
-
-section {
-  padding: 5em 0;
-}
-
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-a {
-  transition: all .25s;
-}
-
-hr {
-  margin-bottom: 3em;
-  width: 7.5%;
-  border-color: black;
+.top {
+  font-size: 1.2em;
 }
 
 /*=Layout=*/
@@ -361,6 +366,8 @@ hr {
 
 }
 
+/*Media Queries*/
+
 @media screen and (max-width: 480px) {
   .main-heading {
     line-height: 90px;
@@ -381,7 +388,7 @@ hr {
 
 
 /*Icons*/
-/* Style all font awesome icons */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -390,12 +397,9 @@ hr {
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
 
 /* Facebook */
 .fa-facebook {
