@@ -183,9 +183,20 @@ body {
 .main-heading {
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
+  font-size: 40px;
   text-align: center;
-  letter-spacing: 9px;
+  letter-spacing: 8.5px;
+
   text-transform: uppercase;
+}
+.bold {
+  color: #3D9EC5;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bolder {
+  color: #FFFF66;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .container > h1 {
@@ -254,21 +265,22 @@ p {
 .sec-main {
   position: relative;
   height: 560px;
-  background: url(../img/lion-background.jpg) no-repeat center center;
+  background: url(../img/webdev1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .main-heading {
   position: absolute;
-  top: 0;
+  top: 55px;
   right: 0;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   z-index: 2;
   padding: 0;
   margin: auto;
-  height: 40px;
-  color: #30c9e8;
+  line-height: 55px;
+  height: 10px;
+  color: #fff;
 }
 
 .center-block {
@@ -353,7 +365,6 @@ p {
 /*Contact*/
 
 .sec-contact .form-control:focus {
-  border-color: $red;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
 }
 
@@ -370,7 +381,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .main-heading {
-    line-height: 90px;
+    line-height: 60px;
     font-size: 25px;
     font-weight: 500;
     padding-top: 20px;
@@ -424,4 +435,9 @@ p {
 .fa-github {
   background: black;
   color: white;
+}
+
+.indie-flower {
+  font-family: 'Indie Flower', cursive;
+  font-size: 42px;
 }
