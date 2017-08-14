@@ -27,4 +27,4 @@ $(function() {
 
 //Showing and hiding
 
-  $(".main-heading").hide().fadeIn(2300);
+  $(".main-heading").hide().fadeIn(3000);
